@@ -1,0 +1,40 @@
+.logoCloudContainer {
+  width: 100%;
+  height: 235px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoCloudTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 50px;
+  color: #6f6f6f;
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.logoContainer img {
+  padding: 20px;
+}
+
+@media (max-width: 1279px) {
+  .logoCloudContainer {
+    height: auto;
+    padding: 0 40px 0 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 799px) {
+  .logoContainer img {
+    padding: 10px;
+  }
+}
