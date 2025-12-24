@@ -17,4 +17,56 @@
   height: 362px;
   background-color: #8e9c78;
   border-radius: 30px;
+  position: relative;
+  margin-top: 282px;
+}
+
+.imageHeader {
+  position: absolute;
+  top: -282px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+@media (max-width: 1279px) {
+  .headerTitle {
+    font-size: 6rem;
+  }
+
+  .imageContainer {
+    width: 90%;
+    margin-top: 79px;
+  }
+
+  .imageHeader {
+    position: absolute;
+    top: -79px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+}
+
+@media (max-width: 799px) {
+  .headerSection {
+    margin-top: 120px;
+  }
+
+  .headerTitle {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  .imageContainer {
+    margin-top: 193px;
+  }
+
+  .imageHeader {
+    position: absolute;
+    top: -193px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
 }

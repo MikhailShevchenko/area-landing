@@ -11,7 +11,7 @@ const Header = () => {
         <picture>
           <source srcSet={iphone} media="(max-width: 799px)" />
           <source srcSet={ipad_tablet} media="(max-width: 1279px)" />
-          <img src={ipad_desktop} alt="" />
+          <img src={ipad_desktop} className={styles.imageHeader} alt="" />
         </picture>
       </div>
     </section>

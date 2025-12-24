@@ -1,6 +1,7 @@
 .header {
   height: 148px;
   font-family: 'DM Sans', sans-serif;
+  z-index: 1000;
 }
 
 .navbar {
