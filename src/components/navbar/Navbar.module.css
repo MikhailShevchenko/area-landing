@@ -3,30 +3,21 @@
   font-family: 'DM Sans', sans-serif;
 }
 
-.navContainer {
+.navbar {
   width: 100%;
   max-width: 1200px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   padding-top: 20px;
-}
-
-.navLogo,
-.navMenuItem a {
-  color: black;
-}
-
-.navMenuItem a,
-.learnMoreLink {
-  font-size: 0.8rem;
-  font-weight: bold;
 }
 
 .navLogo {
   font-size: 1.8rem;
   font-weight: normal;
+  color: black;
 }
 
 .burgerMenu {
@@ -39,55 +30,65 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: 10px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(30px);
+  border-radius: 30px;
 }
 
 .navMenu {
+  display: flex;
   width: 400px;
   height: 60px;
-  list-style-type: none;
-  display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(30px);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 30px;
+  list-style-type: none;
 }
 
 .navMenuItem:not(:first-child) {
   padding-left: 10px;
 }
 
-.learnMore {
-  width: 127px;
-  height: 48px;
-  background-color: #485c11;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
+.navMenuItem a,
+.learnMoreLink a {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.navMenuItem a {
+  color: black;
 }
 
 .learnMoreLink {
+  width: 127px;
+  height: 48px;
+  background-color: #485c11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.learnMoreLink a {
   color: white;
 }
 
-.learnMore img {
+.learnMoreLink img {
   padding-left: 3px;
   transition: transform 0.3s ease;
 }
 
-.learnMore:hover {
+.learnMoreLink:hover {
   opacity: 70%;
 }
 
-.learnMore:hover img {
+.learnMoreLink:hover img {
   transform: translateY(-5px);
 }
 
 @media (max-width: 1279px) {
-  .navContainer {
+  .navbar {
     margin: 0;
     padding-left: 40px;
     padding-right: 40px;
@@ -95,80 +96,106 @@
 }
 
 @media (max-width: 799px) {
-  .header {
-    height: auto;
-    margin-bottom: 110px;
+  p {
+    margin-top: 120px;
   }
-  .navContainer {
+
+  .header {
+    height: 78px;
+    width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
     background-color: white;
-    max-width: none;
-    width: 100vw;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   }
-  .mobileMenuContainer {
+
+  .mobileHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 78px;
-    z-index: 50;
+    padding: 20px 20px 0 20px;
   }
+
+  .burgerMenu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+  }
+
+  .burgerIcon {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  .burgerIconOpen {
+    opacity: 1;
+  }
+
+  .burgerIconClose {
+    opacity: 0;
+  }
+
+  .navbar {
+    max-width: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
   .navMenuContainer {
     position: initial;
-    left: 0;
     transform: none;
+    margin-top: 50px;
+    background: unset;
+    backdrop-filter: unset;
+    border-radius: 0;
   }
+
+  .mobileMenuContainer {
+    width: 100%;
+    background-color: white;
+    padding: 8px 20px 32px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
   .navMenu {
     width: 100%;
     height: auto;
-    backdrop-filter: unset;
-    background: unset;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 60px;
-    margin-bottom: 50px;
   }
+
   .navMenuItem:not(:first-child) {
     padding-left: 0;
   }
+
   .navMenuItem {
     width: 100%;
     padding: 30px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
   }
-  .mobileMenu {
-    width: 100vw;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    position: absolute;
-    top: 78px;
-    left: 0;
-    padding: 0 30px;
-    background-color: white;
-    z-index: 40;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+  .learnMoreLink {
+    margin-top: 50px;
   }
+
   .mobileMenuOpen {
     opacity: 1;
-    transform: translateY(0);
+    visibility: visible;
+    transform: translateY(-5px);
     pointer-events: auto;
-  }
-  .learnMore {
-    margin-bottom: 32px;
-  }
-  .burgerMenu {
-    display: block;
   }
 }
