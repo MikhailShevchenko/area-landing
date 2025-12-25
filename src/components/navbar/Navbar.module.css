@@ -31,7 +31,7 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: 10px;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(30px);
   border-radius: 30px;
 }
