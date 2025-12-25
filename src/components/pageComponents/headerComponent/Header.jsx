@@ -5,7 +5,7 @@ import iphone from '../../../assets/iPhone.webp';
 
 const Header = () => {
   return (
-    <section className={styles.headerSection}>
+    <header className={styles.headerSection}>
       <h1 className={styles.headerTitle}>Browse everything.</h1>
       <div className={styles.imageContainer}>
         <picture>
@@ -14,7 +14,7 @@ const Header = () => {
           <img src={ipad_desktop} className={styles.imageHeader} alt="" />
         </picture>
       </div>
-    </section>
+    </header>
   );
 };
 

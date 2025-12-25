@@ -10,9 +10,7 @@ function App() {
   return (
     <div className="app-container">
       <Layout>
-        <header>
-          <Header />
-        </header>
+        <Header />
         <main>
           <LogoCloud />
           <Benefits />
