@@ -1,9 +1,10 @@
 import './App.css';
-import Benefits from './components/benefitsComponent/Benefits';
-import Features from './components/featuresComponent/Features';
-import Header from './components/headerComponent/Header';
+import Benefits from './components/pageComponents/benefitsComponent/Benefits';
+import Features from './components/pageComponents/featuresComponent/Features';
+import Header from './components/pageComponents/headerComponent/Header';
 import Layout from './components/layout/Layout';
-import LogoCloud from './components/logoCloudComponent/LogoCloud';
+import LogoCloud from './components/pageComponents/logoCloudComponent/LogoCloud';
+import Specifications from './components/pageComponents/specificationsComponent/Specifications';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <LogoCloud />
         <Benefits />
         <Features />
+        <Specifications />
       </Layout>
     </div>
   );

@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
-import ipad_desktop from '../../assets/Ipad.webp';
-import ipad_tablet from '../../assets/IpadTablet.webp';
-import iphone from '../../assets/iPhone.webp';
+import ipad_desktop from '../../../assets/Ipad.webp';
+import ipad_tablet from '../../../assets/IpadTablet.webp';
+import iphone from '../../../assets/iPhone.webp';
 
 const Header = () => {
   return (

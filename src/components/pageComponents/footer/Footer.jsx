@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import union_img from '../../assets/Union.svg';
+import union_img from '../../../assets/Union.svg';
 
 const Footer = () => {
   return (

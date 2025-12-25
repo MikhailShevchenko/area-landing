@@ -1,10 +1,10 @@
 import styles from './LogoCloud.module.css';
-import logo_1 from '../../assets/Logo1.svg';
-import logo_2 from '../../assets/Logo2.svg';
-import logo_3 from '../../assets/Logo3.svg';
-import logo_4 from '../../assets/Logo4.svg';
-import logo_5 from '../../assets/Logo5.svg';
-import logo_6 from '../../assets/Logo6.svg';
+import logo_1 from '../../../assets/Logo1.svg';
+import logo_2 from '../../../assets/Logo2.svg';
+import logo_3 from '../../../assets/Logo3.svg';
+import logo_4 from '../../../assets/Logo4.svg';
+import logo_5 from '../../../assets/Logo5.svg';
+import logo_6 from '../../../assets/Logo6.svg';
 
 const LogoCloud = () => {
   return (

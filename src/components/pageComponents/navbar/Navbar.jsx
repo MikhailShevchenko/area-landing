@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import styles from './Navbar.module.css';
-import arrow_icon from '../../assets/Arrow.svg';
-import burger_menu from '../../assets/burger.svg';
-import burger_close from '../../assets/mobileClose.svg';
+import arrow_icon from '../../../assets/Arrow.svg';
+import burger_menu from '../../../assets/burger.svg';
+import burger_close from '../../../assets/mobileClose.svg';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -1,7 +1,7 @@
 import styles from './Features.module.css';
-import image_desk from '../../assets/featureSectionDesktop.webp';
-import image_tablet from '../../assets/featureSectionTablet.webp';
-import image_phone from '../../assets/featureSectionPhone.webp';
+import image_desk from '../../../assets/featureSectionDesktop.webp';
+import image_tablet from '../../../assets/featureSectionTablet.webp';
+import image_phone from '../../../assets/featureSectionPhone.webp';
 
 const Features = () => {
   return (

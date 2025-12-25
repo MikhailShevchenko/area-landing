@@ -1,11 +1,11 @@
 import styles from './Benefits.module.css';
-import cable_icon from '../../assets/cableIcon.svg';
-import earth_icon from '../../assets/earthIcon.svg';
-import account_icon from '../../assets/accountIcon.svg';
-import chart_icon from '../../assets/chartIcon.svg';
-import hero_image_desktop from '../../assets/Hero Image.webp';
-import hero_image_tablet from '../../assets/Hero Image tablet.webp';
-import hero_image_phone from '../../assets/Hero Image phone.webp';
+import cable_icon from '../../../assets/cableIcon.svg';
+import earth_icon from '../../../assets/earthIcon.svg';
+import account_icon from '../../../assets/accountIcon.svg';
+import chart_icon from '../../../assets/chartIcon.svg';
+import hero_image_desktop from '../../../assets/Hero Image.webp';
+import hero_image_tablet from '../../../assets/Hero Image tablet.webp';
+import hero_image_phone from '../../../assets/Hero Image phone.webp';
 
 const Benefits = () => {
   return (
