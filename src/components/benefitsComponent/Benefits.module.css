@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -111,6 +111,9 @@
 }
 
 @media (max-width: 799px) {
+  .benefitsSection {
+    margin: 0 auto 100px auto;
+  }
   .benefitsList {
     grid-template-columns: 1fr;
   }
