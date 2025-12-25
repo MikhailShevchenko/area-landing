@@ -7,6 +7,7 @@
 .specsHeader {
   padding: 80px;
   margin-bottom: 20px;
+  border-top: 1px solid #e9e9e9;
 }
 
 .specsHeader header {
@@ -131,6 +132,9 @@
 }
 
 @media (max-width: 1279px) {
+  .specsHeader {
+    margin: 0 40px 20px 40px;
+  }
   .subtitle,
   .headerDiscription {
     margin-top: 0;
