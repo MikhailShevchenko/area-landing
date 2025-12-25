@@ -17,8 +17,7 @@
 }
 
 .title + p,
-.featuresList,
-.discoverMoreLink {
+.featuresList {
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -62,33 +61,6 @@
   align-items: center;
 }
 
-.discoverMoreLink {
-  width: 138px;
-  height: 48px;
-  background-color: #dfecc6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.discoverMoreLink a {
-  font-size: 0.7rem;
-  font-weight: bold;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-.discoverMoreLink:hover {
-  background-color: #879076;
-}
-
-.discoverMoreLink:hover a {
-  color: white;
-}
-
 .imageContainer {
   display: flex;
   justify-content: center;
@@ -113,12 +85,8 @@
     width: 100%;
   }
 
-  .discoverMoreLink {
-    margin-bottom: 80px;
-  }
-
   .imageContainer {
-    margin: 0;
+    margin: 80px 0 0 0;
     padding: 0 40px;
   }
 }

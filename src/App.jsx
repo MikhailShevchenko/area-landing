@@ -10,11 +10,15 @@ function App() {
   return (
     <div className="app-container">
       <Layout>
-        <Header />
-        <LogoCloud />
-        <Benefits />
-        <Features />
-        <Specifications />
+        <header>
+          <Header />
+        </header>
+        <main>
+          <LogoCloud />
+          <Benefits />
+          <Features />
+          <Specifications />
+        </main>
       </Layout>
     </div>
   );

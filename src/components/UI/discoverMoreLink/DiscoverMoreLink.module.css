@@ -1,0 +1,26 @@
+.discoverMoreLink {
+  width: 138px;
+  height: 48px;
+  background-color: #dfecc6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discoverMoreLink a {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.discoverMoreLink:hover {
+  background-color: #879076;
+}
+
+.discoverMoreLink:hover a {
+  color: white;
+}

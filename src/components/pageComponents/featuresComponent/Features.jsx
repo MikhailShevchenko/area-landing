@@ -2,6 +2,7 @@ import styles from './Features.module.css';
 import image_desk from '../../../assets/featureSectionDesktop.webp';
 import image_tablet from '../../../assets/featureSectionTablet.webp';
 import image_phone from '../../../assets/featureSectionPhone.webp';
+import DiscoverMoreLink from '../../UI/discoverMoreLink/DiscoverMoreLink';
 
 const Features = () => {
   return (
@@ -31,9 +32,7 @@ const Features = () => {
             operation.
           </li>
         </ul>
-        <div className={styles.discoverMoreLink}>
-          <a href="#">Discover More</a>
-        </div>
+        <DiscoverMoreLink />
       </div>
       <figure className={styles.imageContainer}>
         <picture>
