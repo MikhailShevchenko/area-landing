@@ -5,6 +5,7 @@ import Header from './components/pageComponents/headerComponent/Header';
 import Layout from './components/layout/Layout';
 import LogoCloud from './components/pageComponents/logoCloudComponent/LogoCloud';
 import Specifications from './components/pageComponents/specificationsComponent/Specifications';
+import Testimonial from './components/pageComponents/testimonialComponent/Testimonial';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Benefits />
           <Features />
           <Specifications />
+          <Testimonial />
         </main>
       </Layout>
     </div>
