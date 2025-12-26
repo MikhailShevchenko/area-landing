@@ -1,0 +1,111 @@
+.howTo {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 120px auto;
+}
+
+.howToHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  border-top: 1px solid #e9e9e9;
+}
+
+.howToHeader h2 {
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+}
+
+.title {
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 3.7rem;
+  font-weight: normal;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  counter-reset: item;
+}
+
+.list li {
+  counter-increment: item;
+  height: auto;
+  width: 386px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.list li::before {
+  content: counter(item, decimal-leading-zero);
+  font-size: 5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: normal;
+  color: #929292;
+  display: block;
+  margin-top: 60px;
+}
+
+.list li article h3 {
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+
+.list li article p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #6f6f6f;
+}
+
+@media (max-width: 1279px) {
+  .howTo {
+    margin: 0 0 120px 0;
+    padding: 0 40px;
+    max-width: none;
+    width: 100%;
+  }
+
+  .list {
+    overflow-x: auto;
+    height: 100%;
+  }
+
+  .list li {
+    flex-shrink: 0;
+    width: 300px;
+  }
+
+  .list li article p {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  .howTo {
+    margin: 0 0 100px 0;
+  }
+  .title {
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+  .howToHeader {
+    flex-direction: column;
+  }
+
+  .list li article p {
+    margin-top: 0;
+  }
+}
