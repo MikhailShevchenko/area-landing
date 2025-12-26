@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="app-container">
       <Layout>
-        <Header />
         <main>
+          <Header />
           <LogoCloud />
           <Benefits />
           <Features />
