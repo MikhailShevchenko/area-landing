@@ -8,6 +8,7 @@ import Specifications from './components/pageComponents/specificationsComponent/
 import Testimonial from './components/pageComponents/testimonialComponent/Testimonial';
 import HowTo from './components/pageComponents/howItWorksComponent/HowTo';
 import HeroImageComponent from './components/pageComponents/heroImageComponent/HeroImageComponent';
+import CTA from './components/pageComponents/centeredCTAComponent/CTA';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Testimonial />
           <HowTo />
           <HeroImageComponent />
+          <CTA />
         </main>
       </Layout>
     </div>

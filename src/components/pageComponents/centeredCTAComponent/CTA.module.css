@@ -1,0 +1,90 @@
+.ctaSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 100px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.title {
+  font-family: 'Crimson Text', sans-serif;
+  font-weight: normal;
+  font-size: 3.7rem;
+}
+
+.description {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #6f6f6f;
+  padding: 40px 0;
+  max-width: 600px;
+  text-align: center;
+}
+
+.learnMoreLink {
+  width: 600px;
+  height: 48px;
+  background-color: #485c11;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.learnMoreLink a {
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.learnMoreLink img {
+  padding-left: 3px;
+  transition: transform 0.3s ease;
+}
+
+.learnMoreLink:hover {
+  opacity: 70%;
+}
+
+.learnMoreLink:hover img {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1279px) {
+  .ctaSection {
+    padding: 0 40px;
+  }
+  .learnMoreLink {
+    width: 520px;
+  }
+}
+
+@media (max-width: 799px) {
+  .header {
+    padding: 120px 16px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .title,
+  .description {
+    margin-top: 0;
+  }
+
+  .learnMoreLink {
+    width: 343px;
+  }
+}
