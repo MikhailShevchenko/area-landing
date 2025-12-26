@@ -7,6 +7,7 @@ import LogoCloud from './components/pageComponents/logoCloudComponent/LogoCloud'
 import Specifications from './components/pageComponents/specificationsComponent/Specifications';
 import Testimonial from './components/pageComponents/testimonialComponent/Testimonial';
 import HowTo from './components/pageComponents/howItWorksComponent/HowTo';
+import HeroImageComponent from './components/pageComponents/heroImageComponent/HeroImageComponent';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Specifications />
           <Testimonial />
           <HowTo />
+          <HeroImageComponent />
         </main>
       </Layout>
     </div>
