@@ -1,5 +1,5 @@
 import styles from './HowTo.module.css';
-import DiscoverMoreLink from '../../UI/discoverMoreLink/DiscoverMoreLink';
+import DiscoverMoreLink from '../../UI/discoverMoreLink/button/DiscoverMoreLink';
 
 const HowTo = () => {
   return (
