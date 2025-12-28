@@ -9,21 +9,40 @@ import Testimonial from './components/pageComponents/testimonialComponent/Testim
 import HowTo from './components/pageComponents/howItWorksComponent/HowTo';
 import HeroImageComponent from './components/pageComponents/heroImageComponent/HeroImageComponent';
 import CTA from './components/pageComponents/centeredCTAComponent/CTA';
+import Reveal from './components/UI/reveal/Reveal';
 
 function App() {
   return (
     <div className="app-container">
       <Layout>
         <main>
-          <Header />
-          <LogoCloud />
-          <Benefits />
-          <Features />
-          <Specifications />
-          <Testimonial />
-          <HowTo />
-          <HeroImageComponent />
-          <CTA />
+          <Reveal>
+            <Header />
+          </Reveal>
+          <Reveal>
+            <LogoCloud />
+          </Reveal>
+          <Reveal>
+            <Benefits />
+          </Reveal>
+          <Reveal>
+            <Features />
+          </Reveal>
+          <Reveal>
+            <Specifications />
+          </Reveal>
+          <Reveal>
+            <Testimonial />
+          </Reveal>
+          <Reveal>
+            <HowTo />
+          </Reveal>
+          <Reveal>
+            <HeroImageComponent />
+          </Reveal>
+          <Reveal>
+            <CTA />
+          </Reveal>
         </main>
       </Layout>
     </div>
