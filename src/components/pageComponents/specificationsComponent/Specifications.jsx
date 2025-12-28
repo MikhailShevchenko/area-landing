@@ -1,5 +1,5 @@
 import styles from './Specifications.module.css';
-import DiscoverMoreLink from '../../UI/discoverMoreLink/button/DiscoverMoreLink';
+import DiscoverMoreLink from '../../UI/discoverMoreLink/DiscoverMoreLink';
 import CheckIcon from '../../../assets/check.svg?react';
 import CloseIcon from '../../../assets/x.svg?react';
 
