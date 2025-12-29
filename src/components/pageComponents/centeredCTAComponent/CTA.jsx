@@ -3,7 +3,7 @@ import arrow_icon from '../../../assets/Arrow.svg';
 
 const CTA = () => {
   return (
-    <section className={styles.ctaSection}>
+    <section id="cta" className={styles.ctaSection}>
       <header className={styles.header}>
         <h2 className={styles.title}>Connect with us</h2>
         <p className={styles.description}>

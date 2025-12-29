@@ -3,7 +3,7 @@ import DiscoverMoreLink from '../../UI/discoverMoreLink/DiscoverMoreLink';
 
 const HowTo = () => {
   return (
-    <section className={styles.howTo}>
+    <section id="howTo" className={styles.howTo}>
       <header className={styles.howToHeader}>
         <h2>How it works</h2>
         <p className={styles.title}>Map Your Success</p>

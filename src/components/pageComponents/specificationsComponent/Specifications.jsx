@@ -5,7 +5,7 @@ import CloseIcon from '../../../assets/x.svg?react';
 
 const Specifications = () => {
   return (
-    <section className={styles.specifications}>
+    <section id="specifications" className={styles.specifications}>
       <div className={styles.specsHeader}>
         <header>
           <h2>Specs</h2>

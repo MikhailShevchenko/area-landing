@@ -9,7 +9,7 @@ import hero_image_phone from '../../../assets/Hero Image phone.webp';
 
 const Benefits = () => {
   return (
-    <section className={styles.benefitsSection}>
+    <section id="benefits" className={styles.benefitsSection}>
       <header>
         <h2>Benefits</h2>
         <p className={styles.subtitle}>We’ve cracked the code.</p>

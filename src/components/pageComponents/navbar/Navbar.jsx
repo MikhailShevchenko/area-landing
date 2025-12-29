@@ -18,11 +18,15 @@ const Navbar = () => {
     };
   });
 
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.mobileHeader}>
-          <a href="#" className={styles.navLogo}>
+          <a href="/" className={styles.navLogo}>
             Area
           </a>
           <div
@@ -57,16 +61,24 @@ const Navbar = () => {
           <div className={styles.navMenuContainer}>
             <ul className={styles.navMenu}>
               <li className={styles.navMenuItem}>
-                <a href="#">Benefits</a>
+                <a href="#benefits" onClick={handleCloseMobileMenu}>
+                  Benefits
+                </a>
               </li>
               <li className={styles.navMenuItem}>
-                <a href="#">Specifications</a>
+                <a href="#specifications" onClick={handleCloseMobileMenu}>
+                  Specifications
+                </a>
               </li>
               <li className={styles.navMenuItem}>
-                <a href="#">How-to</a>
+                <a href="#howTo" onClick={handleCloseMobileMenu}>
+                  How-to
+                </a>
               </li>
               <li className={styles.navMenuItem}>
-                <a href="#">Contact Us</a>
+                <a href="#cta" onClick={handleCloseMobileMenu}>
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>
