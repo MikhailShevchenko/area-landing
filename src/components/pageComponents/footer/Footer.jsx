@@ -8,13 +8,13 @@ const Footer = () => {
       <div>
         <ul className={styles.footerMenu}>
           <li className={styles.footerMenuItem}>
-            <a href="#">Benefits</a>
+            <a href="#benefits">Benefits</a>
           </li>
           <li className={styles.footerMenuItem}>
-            <a href="#">Specifications</a>
+            <a href="#specifications">Specifications</a>
           </li>
           <li className={styles.footerMenuItem}>
-            <a href="#">How-to</a>
+            <a href="#howTo">How-to</a>
           </li>
         </ul>
       </div>
