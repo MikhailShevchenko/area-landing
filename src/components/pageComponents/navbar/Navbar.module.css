@@ -50,7 +50,7 @@
 }
 
 .navMenuItem a,
-.learnMoreLink a {
+.learnMoreLink {
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -60,32 +60,21 @@
 }
 
 .learnMoreLink {
-  width: 127px;
-  height: 48px;
-  background-color: #485c11;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
+  background-color: #485c11;
+  width: 127px;
+  height: 48px;
+  color: white;
   cursor: pointer;
   transition: opacity 0.3s ease;
-}
-
-.learnMoreLink a {
-  color: white;
 }
 
 .learnMoreLink img {
   padding-left: 3px;
   transition: transform 0.3s ease;
-}
-
-.learnMoreLink:hover {
-  opacity: 70%;
-}
-
-.learnMoreLink:hover img {
-  transform: translateY(-5px);
 }
 
 @media (max-width: 1279px) {
@@ -202,6 +191,16 @@
   .mobileMenuOpen {
     opacity: 1;
     visibility: visible;
+    transform: translateY(-5px);
+  }
+}
+
+@media (hover: hover) {
+  .learnMoreLink:hover {
+    opacity: 70%;
+  }
+
+  .learnMoreLink:hover img {
     transform: translateY(-5px);
   }
 }

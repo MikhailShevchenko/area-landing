@@ -39,9 +39,6 @@
   justify-content: center;
   transition: opacity 0.3s ease;
   cursor: pointer;
-}
-
-.learnMoreLink a {
   color: white;
   font-family: 'DM Sans', sans-serif;
   font-weight: bold;
@@ -51,14 +48,6 @@
 .learnMoreLink img {
   padding-left: 3px;
   transition: transform 0.3s ease;
-}
-
-.learnMoreLink:hover {
-  opacity: 70%;
-}
-
-.learnMoreLink:hover img {
-  transform: translateY(-5px);
 }
 
 @media (max-width: 1279px) {
@@ -86,5 +75,15 @@
 
   .learnMoreLink {
     width: 343px;
+  }
+}
+
+@media (hover: hover) {
+  .learnMoreLink:hover {
+    opacity: 70%;
+  }
+
+  .learnMoreLink:hover img {
+    transform: translateY(-5px);
   }
 }

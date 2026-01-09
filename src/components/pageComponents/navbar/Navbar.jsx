@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './Navbar.module.css';
 import arrow_icon from '../../../assets/Arrow.svg';
@@ -7,7 +7,6 @@ import burger_close from '../../../assets/mobileClose.svg';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const learnMoreLinkRef = useRef(null);
 
   useEffect(() => {
     isMobileMenuOpen
@@ -21,12 +20,6 @@ const Navbar = () => {
 
   const handleCloseMobileMenu = () => {
     setIsMobileMenuOpen(false);
-  };
-
-  const handleLink = () => {
-    if (learnMoreLinkRef.current) {
-      learnMoreLinkRef.current.click();
-    }
   };
 
   return (
@@ -89,16 +82,16 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.learnMoreLink} onClick={handleLink}>
+          <div>
             <a
-              ref={learnMoreLinkRef}
               href="https://github.com/MykhailoShevchenko12/area-landing"
-              onClick={(e) => e.stopPropagation()}
               target="_blank"
+              rel="noopener noreferrer"
+              className={styles.learnMoreLink}
             >
               Learn More
+              <img src={arrow_icon} alt="learn more arrow icon" />
             </a>
-            <img src={arrow_icon} alt="learn more arrow icon" />
           </div>
         </div>
       </nav>
