@@ -127,7 +127,7 @@
     height: max-content;
     inset: 0;
     margin: auto;
-    transition: opacity 0.3s ease;
+    /* transition: opacity 0.3s ease; */
   }
 
   .burgerIconOpen {
