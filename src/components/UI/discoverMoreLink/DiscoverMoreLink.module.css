@@ -12,10 +12,11 @@
   font-weight: bold;
   color: black;
   transition: color 0.3s ease, background-color 0.3s ease;
-  z-index: 1000;
 }
 
-.discoverMoreLink:hover {
-  background-color: #879076;
-  color: white;
+@media (hover: hover) {
+  .discoverMoreLink:hover {
+    background-color: #879076;
+    color: white;
+  }
 }

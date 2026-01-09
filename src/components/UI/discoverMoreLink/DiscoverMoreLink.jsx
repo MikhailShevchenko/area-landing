@@ -6,6 +6,7 @@ const DiscoverMoreLink = () => {
       <a
         href="https://github.com/MykhailoShevchenko12/area-landing"
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.discoverMoreLink}
       >
         Discover More
