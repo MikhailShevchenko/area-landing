@@ -1,5 +1,6 @@
 import './main.css';
 import './styles/navbar.css';
+import './styles/hero.css';
 import './styles/footer.css';
 
 const burgerButton = document.getElementById('burger');

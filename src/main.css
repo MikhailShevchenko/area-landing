@@ -70,7 +70,7 @@ body {
 }
 
 .title--display {
-  font-size: clamp(4.7rem, 10vw, 10rem);
+  font-size: clamp(4.1rem, 10vw, 10rem);
   line-height: 90%;
   letter-spacing: -0.0425em;
 }

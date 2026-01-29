@@ -58,8 +58,28 @@
           </div>
         </nav>
       </header>
-
-      <div class="main-container"></div>
+      <main class="main-container">
+        <section class="hero">
+          <h1 class="title title--display hero__title">Browse everything.</h1>
+          <div class="hero__image-background">
+            <picture>
+              <source
+                srcset="./src/assets/images/hero_phone.webp"
+                media="(max-width: 799px)"
+              />
+              <source
+                srcset="./src/assets/images/hero_tablet.webp"
+                media="(max-width: 1279px)"
+              />
+              <img
+                src="./src/assets/images/hero_main.webp"
+                alt="hero section"
+                class="hero__image"
+              />
+            </picture>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
         <div class="footer__nav">
           <ul class="footer__list">
