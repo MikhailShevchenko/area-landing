@@ -1,13 +1,14 @@
 import './main.css';
 import './styles/navbar.css';
 import './styles/hero.css';
+import './styles/logoCloud.css';
 import './styles/footer.css';
 
 const burgerButton = document.getElementById('burger');
 const mobileMenuOpen = document.getElementById('burger-open');
 const mobileMenuClose = document.getElementById('burger-close');
 const mobileMenu = document.getElementById('mobile-menu');
-const links = document.querySelectorAll('.link--hovered');
+const mainNavLinks = document.querySelectorAll('.link--hovered');
 
 function mobileMenuHandler() {
   if (mobileMenuOpen && mobileMenuClose && mobileMenu) {
@@ -27,8 +28,8 @@ if (burgerButton) {
   burgerButton.addEventListener('click', mobileMenuHandler);
 }
 
-if (links) {
-  links.forEach((link) => {
+if (mainNavLinks) {
+  mainNavLinks.forEach((link) => {
     link.addEventListener('click', () => {
       if (mobileMenu.classList.contains('mobile-menu--visible')) {
         mobileMenuHandler();

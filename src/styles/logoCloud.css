@@ -1,0 +1,19 @@
+.logo-cloud {
+  padding: 50px 0px;
+}
+
+.logo-cloud__title {
+  font-size: 0.9rem;
+  color: #6f6f6f;
+}
+
+.logo-cloud__logo-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.logo-cloud__logo {
+  padding: 20px;
+}
