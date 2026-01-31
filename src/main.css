@@ -38,6 +38,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Reddit Mono';
+  src: url(./assets/fonts/RedditMono-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url(./assets/fonts/RethinkSans-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -109,14 +125,39 @@ body {
   line-height: 140%;
   letter-spacing: -0.025em;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .link--primary {
+  width: 127px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #dfecc6;
+  border-radius: 30px;
   color: black;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .link--secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #485c11;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.link--internal {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.link--external {
   color: white;
 }
 
@@ -138,8 +179,17 @@ body {
 }
 
 @media (hover: hover) {
-  .link--hovered:hover {
+  .link--internal:hover {
     color: rgb(96, 96, 96);
+  }
+
+  .link--primary:hover {
+    background-color: #8e9c78;
+    color: white;
+  }
+
+  .link--secondary:hover {
+    background-color: #8e9c78;
   }
 }
 

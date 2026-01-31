@@ -44,13 +44,6 @@
 .navbar__link {
   width: 127px;
   height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  background-color: #485c11;
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
 }
 
 .navbar__arrow {
@@ -60,10 +53,6 @@
 }
 
 @media (hover: hover) {
-  .navbar__link:hover {
-    background-color: #8e9c78;
-  }
-
   .navbar__link:hover .navbar__arrow {
     transform: scale(1.2, 0.8) translateY(-10px);
   }
