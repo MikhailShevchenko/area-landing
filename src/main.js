@@ -2,6 +2,7 @@ import './main.css';
 import './styles/navbar.css';
 import './styles/hero.css';
 import './styles/logoCloud.css';
+import './styles/benefits.css';
 import './styles/footer.css';
 
 const burgerButton = document.getElementById('burger');
