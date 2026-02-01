@@ -8,6 +8,7 @@ import './styles/specifications.css';
 import './styles/testimonial.css';
 import './styles/how-to.css';
 import './styles/hero-image.css';
+import './styles/cta.css';
 import './styles/footer.css';
 
 const burgerButton = document.getElementById('burger');

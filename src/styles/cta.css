@@ -1,0 +1,40 @@
+.cta {
+  padding: 120px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta__paragraph {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.cta__link {
+  width: 520px;
+  height: 48px;
+}
+
+.cta__arrow-icon {
+  padding-left: 3px;
+  will-change: transform;
+  transition: transform 0.4s ease-in-out;
+}
+
+@media (hover: hover) {
+  .cta__link:hover .cta__arrow-icon {
+    transform: scale(1.2, 0.8) translateY(-10px);
+  }
+}
+
+@media (max-width: 1279px) {
+  .cta {
+    padding: 120px 0px;
+  }
+}
+
+@media (max-width: 799px) {
+  .cta__link {
+    width: 300px;
+  }
+}
