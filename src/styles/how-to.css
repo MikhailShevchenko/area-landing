@@ -1,0 +1,75 @@
+.how-to {
+  padding-bottom: 120px;
+}
+
+.how-to__header {
+  padding: 80px 0px;
+}
+
+.how-to__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-to__list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  counter-reset: how-to-counter;
+}
+
+.how-to__item {
+  flex: 1;
+  padding: 60px 30px 40px 0px;
+  border-top: 1px solid #e9e9e9;
+  counter-increment: how-to-counter;
+}
+
+.how-to__item::before {
+  content: counter(how-to-counter, decimal-leading-zero);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  color: #929292;
+}
+
+.how-to__item-title {
+  padding-top: 60px;
+}
+
+.how-to__paragraph {
+  padding-top: 20px;
+}
+
+@media (max-width: 1279px) {
+  .how-to__list-wrapper {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .how-to__list {
+    width: 100%;
+    min-width: 940px;
+  }
+}
+
+@media (max-width: 799px) {
+  .how-to {
+    padding-bottom: 100px;
+  }
+
+  .how-to__header-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .how-to__list {
+    min-width: 752px;
+  }
+
+  .how-to__item::before {
+    font-size: 4rem;
+  }
+}
