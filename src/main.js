@@ -5,6 +5,7 @@ import './styles/logoCloud.css';
 import './styles/benefits.css';
 import './styles/features.css';
 import './styles/specifications.css';
+import './styles/testimonial.css';
 import './styles/footer.css';
 
 const burgerButton = document.getElementById('burger');

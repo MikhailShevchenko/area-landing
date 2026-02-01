@@ -202,7 +202,7 @@
         <section class="features">
           <div class="features__info">
             <header class="features__header">
-              <h2 class="features__title">Features</h2>
+              <h2 class="visually-hidden">Features</h2>
               <p class="title title--xl features__subtitle">
                 See the Big Picture
               </p>
@@ -428,6 +428,38 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </section>
+        <section class="testimonial">
+          <h2 class="visually-hidden">Testimonial</h2>
+          <picture class="testimonial__picture">
+            <source
+              srcset="./src/assets/images/testim_mobile.webp"
+              media="(max-width: 799px)"
+            />
+            <source
+              srcset="./src/assets/images/testim_tablet.webp"
+              media="(max-width: 1279px)"
+            />
+            <img
+              src="./src/assets/images/testim_desk.webp"
+              alt="testimonial section"
+              class="testimonial__image"
+            />
+          </picture>
+          <div class="testimonial__quote">
+            <blockquote>
+              <p class="title title--l">
+                “I was skeptical, but Area has completely transformed the way I
+                manage my business. The data visualizations are so clear and
+                intuitive, and the platform is so easy to use. I can't imagine
+                running my company without it.”
+              </p>
+            </blockquote>
+            <div class="testimonial__author">
+              <p class="paragraph testimonial__paragraph">John Smith</p>
+              <p class="caption">Head of Data</p>
+            </div>
           </div>
         </section>
       </main>

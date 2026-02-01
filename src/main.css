@@ -178,6 +178,12 @@ body {
   background-color: #e9e9e9;
 }
 
+.visually-hidden {
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+
 @media (hover: hover) {
   .link--internal:hover {
     color: rgb(96, 96, 96);
