@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 950px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -156,5 +156,13 @@
 
   .navbar__link {
     margin-top: 25px;
+  }
+}
+
+@media (orientation: landscape) {
+  .mobile-menu--visible {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 30px;
   }
 }

@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 950px) {
   .cta__link {
     width: 300px;
   }
