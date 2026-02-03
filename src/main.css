@@ -184,6 +184,21 @@ body {
   visibility: hidden;
 }
 
+.revealed-section--init {
+  animation: 1.5s forwards reveal;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (hover: hover) {
   .link--internal:hover {
     color: rgb(96, 96, 96);

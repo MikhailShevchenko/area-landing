@@ -11,6 +11,7 @@ import './styles/hero-image.css';
 import './styles/cta.css';
 import './styles/footer.css';
 import { resizeListener, toggleMobileMenuHandler } from './modules/mobileMenu';
+import { revealAnimationObserver } from './modules/observer';
 
 const ui = {
   burgerButton: document.getElementById('burger'),
@@ -19,7 +20,13 @@ const ui = {
   mobileMenu: document.getElementById('mobile-menu'),
   mainNavLinks: document.querySelectorAll('.link--internal'),
   resizeBreakPoint: window.matchMedia('(min-width: 799px)'),
+  reduceMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  sections: document.querySelectorAll('.revealed-section'),
 };
+
+if (!ui.reduceMotion && ui.sections.length > 0) {
+  revealAnimationObserver(ui);
+}
 
 if (ui.burgerButton) {
   ui.burgerButton.addEventListener('click', () => toggleMobileMenuHandler(ui));
