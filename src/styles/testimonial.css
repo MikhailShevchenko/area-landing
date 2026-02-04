@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+.testimonial__image {
+  width: 590px;
+  height: auto;
+}
+
 .testimonial__quote {
   display: flex;
   flex-direction: column;
@@ -33,6 +38,10 @@
     gap: 40px;
   }
 
+  .testimonial__image {
+    width: 720px;
+  }
+
   .testimonial__quote {
     padding: 30px 0px;
   }
@@ -50,7 +59,8 @@
   }
 
   .testimonial__image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 343px;
   }
 
   .testimonial__quote {

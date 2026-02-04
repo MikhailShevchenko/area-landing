@@ -62,7 +62,9 @@
 }
 
 .features__image {
-  max-width: 100%;
+  width: 100%;
+  max-width: 590px;
+  height: auto;
 }
 
 @media (hover: hover) {
@@ -77,10 +79,18 @@
     flex-direction: column;
     gap: 0;
   }
+
+  .features__image {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 950px) {
   .features {
     padding-bottom: 80px;
+  }
+
+  .features__image {
+    max-width: 311px;
   }
 }

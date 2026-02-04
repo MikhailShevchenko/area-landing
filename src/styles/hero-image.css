@@ -8,6 +8,20 @@
 }
 
 .hero-image__image {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
   border-radius: 30px;
+}
+
+@media (max-width: 1279px) {
+  .hero-image__image {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-image__image {
+    max-width: 343px;
+  }
 }
