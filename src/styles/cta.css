@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 1279px) {
-  .cta-wrapper {
+  .cta__wrapper {
     padding: 120px 0px;
   }
 }
