@@ -11,17 +11,21 @@
   width: 100%;
   max-width: 1200px;
   height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   border-radius: 30px;
 }
 
 @media (max-width: 1279px) {
   .hero-image__image {
     max-width: 720px;
+    aspect-ratio: 1/0.93;
   }
 }
 
 @media (max-width: 950px) {
   .hero-image__image {
     max-width: 343px;
+    aspect-ratio: 0.5;
   }
 }

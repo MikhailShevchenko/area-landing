@@ -65,6 +65,9 @@
   width: 100%;
   max-width: 590px;
   height: auto;
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 @media (hover: hover) {
@@ -82,6 +85,7 @@
 
   .features__image {
     max-width: 720px;
+    aspect-ratio: 1 / 1.05;
   }
 }
 
@@ -92,5 +96,6 @@
 
   .features__image {
     max-width: 311px;
+    aspect-ratio: 1 / 1.2;
   }
 }

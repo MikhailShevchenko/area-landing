@@ -17,4 +17,5 @@
 .logo-cloud__logo {
   width: 114px;
   height: 44px;
+  aspect-ratio: 16/9;
 }

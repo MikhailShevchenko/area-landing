@@ -22,6 +22,8 @@
   width: 100%;
   max-width: 907px;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   position: absolute;
   top: -165px;
   left: 50%;
@@ -59,9 +61,11 @@
 @media (max-width: 950px) {
   .hero__image {
     max-width: 245px;
+    aspect-ratio: 0.5;
   }
 
   .hero__image-background {
     margin-top: 120px;
+    border-radius: 25px;
   }
 }

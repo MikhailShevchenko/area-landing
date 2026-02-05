@@ -14,6 +14,9 @@
 .testimonial__image {
   width: 590px;
   height: auto;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .testimonial__quote {
@@ -40,6 +43,7 @@
 
   .testimonial__image {
     width: 720px;
+    aspect-ratio: 1;
   }
 
   .testimonial__quote {
