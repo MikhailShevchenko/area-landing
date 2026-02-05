@@ -185,12 +185,12 @@ body {
 }
 
 .revealed-section--init {
-  animation: 1.5s forwards reveal;
+  animation: 0.6s linear reveal;
 }
 
 @keyframes reveal {
   from {
-    transform: translateY(50px);
+    transform: translateY(10px);
     opacity: 0;
   }
   to {
