@@ -190,7 +190,7 @@ body {
 
 @keyframes reveal {
   from {
-    transform: translateY(10px);
+    transform: translateY(4px);
     opacity: 0;
   }
   to {
