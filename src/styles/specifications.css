@@ -99,11 +99,6 @@
   border-bottom: none;
 }
 
-.table__check,
-.table__close {
-  padding-right: 20px;
-}
-
 @media (max-width: 1279px) {
   .table-wrapper {
     display: block;
@@ -139,10 +134,5 @@
     padding: 30px 20px 30px 10px;
     font-size: 0.8rem;
     letter-spacing: -0.01em;
-  }
-
-  .table__check,
-  .table__close {
-    padding-right: 10px;
   }
 }
