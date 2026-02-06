@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -104,8 +106,8 @@ body {
 }
 
 .link--primary {
-  width: 127px;
-  height: 48px;
+  width: 8rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,5 +202,21 @@ body {
 @media (orientation: landscape) {
   .main-container {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 2500px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 3700px) {
+  html {
+    font-size: 32px;
+  }
+
+  .main-wrapper {
+    max-width: 2560px;
   }
 }

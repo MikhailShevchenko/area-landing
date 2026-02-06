@@ -43,8 +43,6 @@
 }
 
 .features__link {
-  width: 127px;
-  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;

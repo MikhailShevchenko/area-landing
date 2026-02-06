@@ -1,6 +1,5 @@
 .navbar {
   width: 100%;
-  max-width: 1920px;
   height: 148px;
   z-index: 1000;
 }
@@ -28,8 +27,8 @@
 
 .navbar__menu {
   list-style-type: none;
-  width: 403px;
-  height: 60px;
+  width: 25rem;
+  height: 3.3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -43,12 +42,14 @@
 }
 
 .navbar__link {
-  width: 127px;
-  height: 48px;
+  width: 8rem;
+  height: 3rem;
 }
 
 .navbar__arrow {
   padding-left: 3px;
+  width: 0.6rem;
+  height: auto;
   will-change: transform;
   transition: transform 0.4s ease-in-out;
 }

@@ -25,7 +25,7 @@
 }
 
 .table__colgroup {
-  width: 400px;
+  width: 25rem;
 }
 
 .table__header {
@@ -58,7 +58,7 @@
 }
 
 .table__cell {
-  padding: 30px;
+  padding: 1.8rem;
   font-family: 'Roboto Mono', system-ui, sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
@@ -71,15 +71,29 @@
 .table__row .table__cell:first-child::before,
 .table__row:not(:is(:nth-child(4), :nth-child(6)))
   .table__cell:not(:is(:first-child, :last-child))::before {
-  content: url(../assets/images/check.svg);
-  padding-right: 10px;
+  content: '';
+  background-image: url(../assets/images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.5rem;
+  padding-right: 1rem;
 }
 
 .table__row .table__cell:last-child::before,
 .table__row:is(:nth-child(4), :nth-child(6))
   .table__cell:not(:is(:first-child, :last-child))::before {
-  content: url(../assets/images/close.svg);
-  padding-right: 10px;
+  content: '';
+  background-image: url(../assets/images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.5rem;
+  padding-right: 1rem;
 }
 
 .table__row .table__cell:first-child {
